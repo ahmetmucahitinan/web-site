@@ -1,0 +1,85 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+    border-radius: 10px;
+
+}
+
+.home-page {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    font-family: "Lobster", sans-serif;
+    background-color: rgb(203 152 152);
+}
+
+.font-developer {
+    display: flex;
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.imagefont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(177, 175, 175);
+}
+
+.imagefont a {
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(196, 187, 187, 0.664);
+}
+
+.imagelogo {
+    width: 700px;
+    height: 400px;
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: url("../../assets/resim/tsabackground.jpg");
+}
+
+.listlink {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-family: "Lobster", sans-serif;
+    background-color: rgb(203 152 152);
+
+
+}
+
+.listlink li {
+    margin-right: 20px;
+}
+
+.listlink a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+.listlink a:hover {
+    color: #43ff5c;
+    cursor: pointer;
+}
+.sociallogo{
+   display: flex;
+   flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: rgb(235, 231, 231);
+    
+}

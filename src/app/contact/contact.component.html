@@ -1,0 +1,36 @@
+<div class="container">
+    <h2>Bize Ulaşın</h2>
+    <form [formGroup]="contactForm" class="field-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Adınız Soyadınız:</mat-label>
+            <input type="text" matInput formControlName="fullName" placeholder="FullName">
+            @if (getFormNameInvalid('fullName')) {
+            <mat-error>{{ getErrorMessage('fullName') }}</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label> E-posta Adresiniz: </mat-label>
+            <input type="email" matInput formControlName="email" placeholder="Ex. pat@example.com">
+            @if (getFormNameInvalid('email')) {
+            <mat-error>{{ getErrorMessage('email') }}</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label> Konu: </mat-label>
+            <input type="text" matInput formControlName="subject" placeholder="Subject">
+            @if (getFormNameInvalid('subject')) {
+            <mat-error>{{ getErrorMessage('subject') }}</mat-error>
+            }
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label> Mesajınız: </mat-label>
+            <input type="text" matInput formControlName="message" placeholder="Message">
+            @if (getFormNameInvalid('message')) {
+            <mat-error>{{ getErrorMessage('message') }}</mat-error>
+            }
+        </mat-form-field>
+        <button class="button-main" mat-raised-button color="warn" (click)="submit()"
+            [disabled]="isDisableForFormGroup()"> GÖNDER
+        </button>
+    </form>
+</div>
